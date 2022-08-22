@@ -4,7 +4,16 @@ public class Person {
 	protected static String name;
 	protected static int age;
 	protected static String address;
+	protected static String gender;
 	
+	public static String getGender() {
+		return gender;
+	}
+
+	public static void setGender(String gender) {
+		Person.gender = gender;
+	}
+
 	public Person() {
 		System.out.println("This is a person default constructor");
 	}

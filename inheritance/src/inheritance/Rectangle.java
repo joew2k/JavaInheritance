@@ -26,13 +26,16 @@ public class Rectangle {
 		Rectangle.width = width;
 	}
 	
-	public static double calculateArea() {
+	public double calculateArea() {
 		double area = length * width;
 		return area;
 	}
-	public static double calculatePerimeter() {
+	public double calculatePerimeter() {
 		double perimeter = (2*length) + (2*width);
 		return perimeter;
+	}
+	public void print() {
+		System.out.println("This is a Rectangle");
 	}
 
 }

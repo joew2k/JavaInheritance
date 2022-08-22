@@ -8,9 +8,13 @@ package inheritance;
  *
  */
 public class Square extends Rectangle {
-	public static double calculatePerimeter() {
+	@Override
+	public double calculatePerimeter() {
 		double perimeter = length * sides;
 		return perimeter;
+	}
+	public void print(String what) {
+		System.out.println("This is a " + what);
 	}
 
 }
